@@ -1,0 +1,185 @@
+/* fonts =================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* color ====================== */
+
+
+:root{
+    --pure_white : #fff;
+    --white_light : #FAFAFA;
+    --text_color : #464856;
+    --gray_white : #7D7D80;
+    --borderColor1 : #53B9B9;
+    --borderColor2 : #BF3D3D;
+    --borderColor3 : #D4A65A;
+    --borderColor4 : #5287B3;
+}
+/* resat all ==================== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--white_light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+
+}
+/* start Code ==================== */
+.futureCardSection{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.header {
+    text-align: center;
+}
+.header h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--gray_white);
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 1.6rem;
+    color: var(--text_color);
+    margin-bottom: 5px;
+
+}
+
+.header  p {
+    font-size: 0.8rem;
+    color: var(--gray_white);
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    box-shadow: 10px 10px 15px #E0E7F0;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: left;
+    width: 350px;
+   
+}
+.card1{
+    border-top: 1px solid var(--borderColor1);
+    border-width: 3px;
+}
+.card2{
+    border-top: 1px solid var(--borderColor2);
+    border-width: 3px;
+}
+.card3{
+    border-top: 1px solid var(--borderColor3);
+    border-width: 3px;
+}
+.card4{
+    border-top: 1px solid var(--borderColor4);
+    border-width: 3px;
+}
+.cardIcons {
+    text-align: right;
+}
+
+.card_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+   
+}
+.col1{
+    justify-self: center;
+    align-self: center;
+}
+.col3{
+    justify-self: center;
+    align-self: center;
+}
+.col2 > .card:first-child{
+   margin-bottom: 20px;
+}
+
+.cardInfo span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--text_color);
+}
+
+.cardInfo p {
+    font-size: .8rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: var(--gray_white);
+}
+
+
+
+
+/* responsive  */
+
+@media (max-width : 1108px) {
+    .card{
+        width: 260px;
+        padding: 10px;
+    }
+}
+@media (max-width : 835px) {
+    .card{
+        width: 230px;
+        padding: 10px;
+    }
+}
+@media (max-width : 739px) {
+    .card_section{
+        display: grid;
+        grid-template-columns:unset;
+        grid-column-gap:20px ;
+        grid-gap: 0px;
+       
+    }
+    .card{
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width : 375px) {
+    .card_section{
+        display: grid;
+        grid-template-columns:unset;
+        grid-column-gap:20px ;
+        grid-gap: 0px;
+       
+    }
+    .header h3 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--gray_white);
+        margin-bottom: 5px;
+    }
+    
+    .header h2 {
+        font-size: 1.2rem;
+     
+    
+    }
+    
+    .header  p {
+        font-size: 0.6rem;
+        
+    }
+
+}
